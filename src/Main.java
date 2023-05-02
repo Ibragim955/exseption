@@ -24,7 +24,7 @@ public class Main {
         }
 
         if (password.length() >= 20 || !password.equals(confilmPassword)) throw new WrongPasswordException();
-        //dsd
+
     }
 
     }
