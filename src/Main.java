@@ -27,6 +27,9 @@ public class Main {
         if (login.length() > 20) {
             throw new WrongLoginException();
         }
+        if (!login.matches("[a-zA-Z0-9_]+")) {
+            throw new WrongLoginException();
+        }
 
         if (password.length() >= 20 || !password.equals(confilmPassword)) throw new WrongPasswordException();
         //dsd
